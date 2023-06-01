@@ -1,0 +1,20 @@
+body {
+    width: 1280px;
+    align-items: center;
+    margin-left: 640px;
+    margin-right: 640px;
+
+    padding: 20px;
+    
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main-title {
+    color:darkslateblue;
+    font-weight: bold;
+    text-align: center;
+}
+
+.paragraph {
+    color: cornflowerblue;
+}
