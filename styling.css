@@ -2,9 +2,11 @@ body {
     width: 1280px;
     align-items: center;
 
+    border: 1px;
+    border-color: azure;
+    background-color: aliceblue;
+
     padding: 20px;
-    
-    font-family: 'Courier New', Courier, monospace;
 }
 
 .main-title {
