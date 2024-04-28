@@ -16,7 +16,7 @@ body, html {
 }
 
 .zeus-logo {
-    width: 400px; /* Adjust width as needed */
+    width: 400px; 
     height: auto;
 }
 
@@ -25,7 +25,7 @@ body, html {
     font-style: normal;
     font-size: 20px;
     color: #87919D;
-    margin-top: 80px; /* Adjust margin as needed */
+    margin-top: 80px; 
     text-align: center;
     letter-spacing: 6px;
     word-spacing: 6px;
@@ -34,7 +34,7 @@ body, html {
 .dots-container {
     display: flex;
     justify-content: center;
-    margin-top: 5px; /* Adjust margin as needed */
+    margin-top: 5px; 
 }
 
 .dot {
@@ -62,4 +62,32 @@ body, html {
 @keyframes dot-animation {
     0%, 100% { opacity: 0; }
     50% { opacity: 1; }
+}
+
+@media (max-width: 800px) {
+    .zeus-logo {
+        width: 50%; 
+        height: auto;
+    }
+
+    .coming-soon {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-size: 12px;
+        color: #87919D;
+        margin-top: 80px; 
+        text-align: center;
+        letter-spacing: 6px;
+        word-spacing: 6px;
+    }
+
+    .dot {
+        width: 5px;
+        height: 5px;
+        background-color: #87919D;
+        border-radius: 50%;
+        margin: 0 5px;
+        opacity: 0;
+        animation: dot-animation 2.5s infinite;
+    }
 }
