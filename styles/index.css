@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #45576D;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.zeus-logo {
+    width: 400px; /* Adjust width as needed */
+    height: auto;
+}
+
+.coming-soon {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-size: 20px;
+    color: #87919D;
+    margin-top: 80px; /* Adjust margin as needed */
+    text-align: center;
+    letter-spacing: 6px;
+    word-spacing: 6px;
+}
+
+.dots-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px; /* Adjust margin as needed */
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #87919D;
+    border-radius: 50%;
+    margin: 0 15px;
+    opacity: 0;
+    animation: dot-animation 2.5s infinite;
+}
+
+.dot:nth-child(1) {
+    animation-delay: 0.25s;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.dot:nth-child(3) {
+    animation-delay: 0.75s;
+}
+
+@keyframes dot-animation {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
